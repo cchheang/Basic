@@ -1,0 +1,29 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div img {
+	width: 100%;
+	max-width: 250px; 
+}
+
+.item_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.item_wrapper article {
+    width: 20px;
+}
+
+img {
+    max-width: 20%;
+    max-height: 20%;
+    object-fit: contain;
+}
