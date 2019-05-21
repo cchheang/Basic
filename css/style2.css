@@ -1,0 +1,49 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "sidebar content content content";
+}
+
+header {
+    background-color: red;
+    grid-area: header;
+}
+
+nav {
+    background-color: green;
+    grid-area: nav;
+}
+
+.main {
+    background-color: blue;
+    grid-area: content;
+}
+
+.sidebar {
+    background-color: purple;
+    grid-area: sidebar;
+}
+
+nav ul {
+    list-style-type: none;
+    /* background-color: #e6bf98; 
+    padding: .75em;
+    margin: 0;
+    border-bottom: 3px solid #cc8850;
+    overflow: auto;
+    width: 80%; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
