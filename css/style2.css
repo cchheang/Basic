@@ -28,6 +28,8 @@ nav {
 .main {
     background-color: blue;
     grid-area: content;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .sidebar {
@@ -46,4 +48,14 @@ nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+  }
+
+  img {
+      width: 50%;
+      height: 50%;
+  }
+  article {
+      width: 250px;
+      height: 250px;
+      background-color: yellow;
   }
