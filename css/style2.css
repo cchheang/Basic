@@ -31,9 +31,8 @@ nav {
     grid-area: content;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     /* align-content: space-between; */
-
 
 }
 
@@ -67,11 +66,13 @@ nav ul {
   article {
       width: 250px;
       height: 150px;
+            /* width: 15%;
+      height: 150px; */
       background-color: yellow;
   }
 
   .main article {
-    margin: 10px;
+    margin: 0.8%;
       display: grid;
       grid-template-columns: 3fr 1fr;
       grid-template-rows: 1fr 9fr;
