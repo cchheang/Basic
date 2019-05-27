@@ -14,7 +14,7 @@ html {
     grid-template-areas:
     "header header header header header header"
     "nav nav nav nav nav nav"
-    "sidebar content content content content content"
+    "content content content content content content"
     "foot foot foot foot foot foot";
 }
 
@@ -72,10 +72,10 @@ nav ul {
 
 }
 
-.sidebar {
+/* .sidebar {
     background-color: purple;
     grid-area: sidebar;
-}
+} */
 
 footer {
     background-color: lightgreen;
