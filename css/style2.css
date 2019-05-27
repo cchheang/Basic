@@ -42,6 +42,11 @@ nav ul > *:hover {
 nav ul > * {
     width: 15%;
     text-align: center;
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    text-decoration-line: none;
 }
 
 nav ul {
