@@ -30,10 +30,6 @@ header {
     justify-content: flex-start;
 }
 
-header h1 {
-    
-}
-
 nav {
     background-color:rgb(206, 126, 126);
     grid-area: nav;
