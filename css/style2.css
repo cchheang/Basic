@@ -95,6 +95,7 @@ footer {
             /* width: 15%;
       height: 150px; */
       background-color: rgba(255, 255, 255, 0.76);
+ 
   }
 
   .main article {
@@ -106,6 +107,10 @@ footer {
       justify-content: center;
       align-items: stretch;
       justify-items: center;
+  }
+
+  .main article:hover {
+    border-style: ridge;
   }
 
   .main article h2 {
