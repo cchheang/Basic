@@ -10,6 +10,8 @@ html {
 
 .wrapper {
     display: grid;
+    width: 90%;
+    margin: auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
     "header header header header header header"
@@ -85,21 +87,28 @@ footer {
 
   img {
       width: 80%;
-      height: 90px;
+      height: 100%;
 
       border-radius: 5%;
   }
   article {
-      width: 250px;
-      height: 150px;
+      width: 20%;
+      margin-left: 4%;
+      margin-top: 2%;
+      height: 100%;
+      flex-grow: 0;
+      flex-shrink: 0;
             /* width: 15%;
       height: 150px; */
       background-color: rgba(255, 255, 255, 0.76);
  
   }
 
+  article:last-child {
+      margin-bottom: 2%;
+  }
+
   .main article {
-    margin: 0.8%;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 6fr 3fr;
