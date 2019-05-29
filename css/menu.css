@@ -91,6 +91,10 @@ footer {
     grid-area: foot;
 }
 
+footer p {
+    text-align: center;
+}
+
 
   img {
       width: 80%;
