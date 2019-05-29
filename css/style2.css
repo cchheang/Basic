@@ -8,10 +8,14 @@ html {
   padding: 0;
 }
 
+body {
+    background-color: rgb(233, 233, 233);
+}
+
 .wrapper {
     display: grid;
     width: 90%;
-    margin: auto;
+    margin: 10px auto auto auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
     "header header header header header header"
@@ -30,6 +34,9 @@ header {
     display: flex;
     flex-flow: column-reverse nowrap;
     justify-content: flex-start;
+    border-radius: 20% 20% 0% 0%;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 
 nav {
