@@ -148,3 +148,21 @@ footer {
     grid-column: 1/2;
     /* background-color: purple; */
 }
+
+  /* Tablet devices */
+  @media (max-width: 850px) { 
+    .main article {
+        width: 44%;
+    }
+
+    }
+
+    /* Small devices (phones etc) */
+@media (max-width: 550px) { 
+    .main article {
+        width: 92%;
+    }
+  
+
+  
+  }
