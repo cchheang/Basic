@@ -87,8 +87,9 @@ nav ul {
 } */
 
 footer {
-    background-color: lightgreen;
+    background-color: #FFF6E0;
     grid-area: foot;
+    border-radius: 0% 0% 20% 20%;
 }
 
 footer p {
@@ -127,6 +128,7 @@ footer p {
       justify-content: center;
       align-items: stretch;
       justify-items: center;
+      border-radius: 2%;
   }
 
   .main article:hover {

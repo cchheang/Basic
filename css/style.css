@@ -4,74 +4,105 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-/* .wrapper {
-    margin: 0 auto;
-    width: 97%;
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
+    width: 90%;
+    margin: 10px auto auto auto;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-    "header header header header"
-    "nav nav nav nav";
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "content content content content content content"
+    "foot foot foot foot foot foot";
 }
 
-.wrapper header {
+header {
+    background-color: red;
+    color: navy;
     grid-area: header;
+    background-image: url("../img/beans.jpg");
+    /* opacity: 0.5; */
+    height: 100px;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: flex-start;
+    border-radius: 20% 20% 0% 0%;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 
-.wrapper nav {
+nav {
+    background-color:#FFF6E0;
     grid-area: nav;
-} */
+}
 
-/* .row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 97%;
-} */
+nav ul > *:hover {
+    background-color: rgb(189, 155, 69);
+}
+
+nav ul > * {
+    width: 15%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    text-decoration-line: none;
+}
 
 nav ul {
     list-style-type: none;
-    background-color: #e6bf98; 
+    /* background-color: #e6bf98; 
     padding: .75em;
     margin: 0;
     border-bottom: 3px solid #cc8850;
     overflow: auto;
-    width: 80%;
+    width: 80%; */
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: center;
   }
 
-  /* nav li:nth-child(even) {
-    width: 50%;
-    float: right;
-    padding: 0.5em;
-  }
-  nav li:nth-child(odd) {
-    width: 50%;
-    float: left;
-      padding: 0.5em;
-  } */
+.main {
+    background-color: blue;
+    grid-area: content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* align-content: space-between; */
+    background-image: url("../img/nature.jpg");
+    min-height: 1200px;
 
-  nav li,
-  nav li:nth-child(even),
-  nav li:nth-child(odd) {
-    display: inline-block;
-    float: none;
-    width: auto;
-    padding: 0;
-  }
+}
 
-  nav a {
-    color: #c80060;
-    text-decoration: none;
-    display: block;
-    padding-left:3.333333%;
-  }
-  nav a:hover {
-    color:#00c4c7;
-  }
+footer {
+    background-color: #FFF6E0;
+    grid-area: foot;
+    border-radius: 0% 0% 20% 20%;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+  /* Tablet devices */
+  @media (max-width: 850px) { 
+
+
+    }
+
+    /* Small devices (phones etc) */
+@media (max-width: 550px) { 
+
+
   
+  }
