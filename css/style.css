@@ -74,9 +74,9 @@ nav ul {
 .main {
     background-color: blue;
     grid-area: content;
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     /* align-content: space-between; */
     background-image: url("../img/nature.jpg");
     min-height: 1200px;
