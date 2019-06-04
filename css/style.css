@@ -71,6 +71,11 @@ nav ul {
     justify-content: center;
   }
 
+/* Hide the link that should open and close the topnav on small screens */
+nav .icon {
+  display: none;
+}
+
 .main {
     background-color: blue;
     grid-area: content;
@@ -102,7 +107,14 @@ footer p {
 
     /* Small devices (phones etc) */
 @media (max-width: 550px) { 
-
+  nav li:not(:last-child) {display: none;}
+  nav .icon {
+    /* float: left; */
+    display: block;
+  }
+  nav ul {
+    justify-content: left;
+  }
 
   
   }
