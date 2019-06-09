@@ -1,0 +1,125 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+.wrapper {
+    display: grid;
+    width: 90%;
+    margin: 10px auto auto auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "content content content content content content"
+    "foot foot foot foot foot foot";
+}
+
+header {
+    background-color: red;
+    color: navy;
+    grid-area: header;
+    background-image: url("../img/beans.jpg");
+    /* opacity: 0.5; */
+    height: 100px;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: flex-start;
+    border-radius: 20% 20% 0% 0%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+nav {
+    background-color:#FFF6E0;
+    grid-area: nav;
+}
+
+nav ul > *:hover {
+    background-color: rgb(189, 155, 69);
+}
+
+nav ul > * {
+    width: 15%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style-type: none;
+    /* background-color: #e6bf98; 
+    padding: .75em;
+    margin: 0;
+    border-bottom: 3px solid #cc8850;
+    overflow: auto;
+    width: 80%; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+/* Hide the link that should open and close the topnav on small screens */
+nav .icon {
+  display: none;
+}
+
+.main {
+    background-color: blue;
+    grid-area: content;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; */
+    /* align-content: space-between; */
+
+}
+
+       /* Set the size of the div element that contains the map */
+       #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+        background-color: grey;
+       }
+
+footer {
+    background-color: #FFF6E0;
+    grid-area: foot;
+    border-radius: 0% 0% 20% 20%;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+  /* Tablet devices */
+  @media (max-width: 850px) { 
+
+
+    }
+
+    /* Small devices (phones etc) */
+@media (max-width: 550px) { 
+  nav li:not(:last-child) {display: none;}
+  nav .icon {
+    /* float: left; */
+    display: block;
+  }
+  nav ul {
+    justify-content: left;
+  }
+
+  
+  }
