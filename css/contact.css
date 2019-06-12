@@ -77,8 +77,9 @@ nav .icon {
 }
 
 .main {
-    background-color: blue;
+    background-color: grey;
     grid-area: content;
+    padding: 10px;
     /* display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; */
