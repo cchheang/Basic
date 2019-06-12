@@ -86,12 +86,19 @@ nav .icon {
 
 }
 
-       /* Set the size of the div element that contains the map */
-       #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-        background-color: grey;
-       }
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:500px;
+  width:600px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:600px;
+}
 
 footer {
     background-color: #FFF6E0;
