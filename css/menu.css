@@ -175,13 +175,13 @@ footer p {
     }
 
     nav {position: relative;}
-    nav li:not(:last-child) {display: none;}
+    nav li:not(:first-child) {display: none;}
     /* nav li:not(:last-child) {width: 100%; display: block;} */
     nav .icon {
       display: block;
-      position: absolute;
+      /* position: absolute;
       right: 0;
-      top: 0;
+      top: 0; */
     }
     nav ul {
         display: block;
