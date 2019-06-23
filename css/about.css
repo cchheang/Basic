@@ -145,13 +145,21 @@ footer p {
     grid-column: 1/3;
     grid-row: 3/4;
   }
-  nav li:not(:last-child) {display: none;}
+  nav {position: relative; padding: 10px;}
+  nav li:not(:first-child) {display: none; width: 100%; text-align: left;}
+  nav li:first-child {display: block; width: 100%; text-align: left;}
   nav .icon {
-    /* float: left; */
     display: block;
   }
+  
   nav ul {
+    display: block;
     justify-content: left;
+  }
+  
+  .navBar.responsive li {
+    float: none;
+    display: block;
   }
   
   }
