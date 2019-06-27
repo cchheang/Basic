@@ -85,7 +85,11 @@ nav .icon {
     /* align-content: space-between; */
     background-image: url("../img/nature.jpg");
     min-height: 1200px;
+}
 
+.main p {
+  font-size: 5em;
+  text-align: center;
 }
 
 .button {
