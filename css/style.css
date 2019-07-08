@@ -82,7 +82,7 @@ nav .icon {
     display: flex;
     flex-flow: row wrap;
     /* justify-content: flex-start; */
-    align-content: space-around;
+    align-content: center;
     background-image: url("../img/nature.jpg");
     min-height: 1200px;
 }
