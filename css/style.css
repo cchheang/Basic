@@ -14,8 +14,8 @@ body {
 
 .wrapper {
     display: grid;
-    width: 90%;
-    margin: 10px auto auto auto;
+    width: 100%;
+    margin: auto auto auto auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
     "header header header header header header"
